@@ -13,10 +13,10 @@ app.get("/addTwoNumber", (req,res)=> {
     const result = addTwoNumber(n1,n2);
     res.json({statuscode:200, data: result});
 });  
-
+// run the addTwoNumber function through the console
 console.log(addTwoNumber(19,12));
 const port = 3040;
-// run the addTwoNumber function through the console
+// display on the console the port
 app.listen(port,()=>{
     console.log("Hello I'm listening to port"+port);
 })
